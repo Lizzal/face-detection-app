@@ -1,8 +1,8 @@
-body {
-  margin: 0;
+.app {
+  margin-top: 50px;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  /* height: 100vh; */
+  /* width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,16 @@ body {
 
 canvas {
   position: absolute;
+}
+
+.controls {
+  margin: 40px;
+  display: grid;
+  justify-content: start;
+}
+
+.heading {
+  text-align: center;
 }
 
 /* The switch - the box around the slider */

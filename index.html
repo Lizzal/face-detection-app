@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Face Detection App</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="face-api.min.js"></script>
-    <script defer src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/checkbox.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/face-api.min.js"></script>
+    <script defer src="js/app.js"></script>
   </head>
   <body>
-    <video id="webcam" width="720" height="540" autoplay muted></video>
+    <h2 class="heading">Enable your webcam :)</h2>
+    <div class="app">
+      <video id="webcam" width="720" height="540" autoplay muted></video>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="controls">
+      <div class="ui toggle checkbox">
+        <input type="checkbox" checked id="landmarks" />
+        <label>Enable landmarks</label>
+      </div>
+      <div class="ui toggle checkbox">
+        <input type="checkbox" checked id="faceExpression" />
+        <label>Enable face expression</label>
+      </div>
+      <div class="ui toggle checkbox">
+        <input type="checkbox" checked id="agePrediction" />
+        <label>Enable age prediction</label>
+      </div>
+    </div>
   </body>
 </html>
